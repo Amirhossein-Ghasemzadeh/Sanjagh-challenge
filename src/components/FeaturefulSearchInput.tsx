@@ -40,7 +40,6 @@ const FeaturefulSearchInput: React.FC<FeaturefulSearchInputProps> = ({
       <div className='relative flex items-center justify-between w-full overflow-hidden'>
         <input
           ref={inputRef}
-          type='search'
           className='absolute text-gray-700 outline-none'
           style={{width: shouldInputExpand ? '100%' : fakeSpanDomWidth}}
           value={inputValue}
@@ -54,7 +53,6 @@ const FeaturefulSearchInput: React.FC<FeaturefulSearchInputProps> = ({
         <input
           placeholder={suggestionInputPlaceholder}
           className='w-full outline-none'
-          // focusable='false'
         />
       </div>
     </div>
